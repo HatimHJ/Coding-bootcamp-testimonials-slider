@@ -1,0 +1,18 @@
+/*
+
+
+
+*/
+
+$colors :#ffffff, #212121, 
+#26baa4,#6173ff, #4c545d,#9fabb2;
+
+@each $color in $colors {
+  $i : index($colors, $color);
+  .text-#{$i}{
+    color : $color;
+  }
+  .bg-#{$i}{
+    background-color : $color;
+  }
+}

@@ -1,0 +1,34 @@
+/* ================================
+  All Common Styles In This Project
+  ================================ */
+  body{
+    font-family: 'Inter', sans-serif;
+
+    --dark-blue: hsl(240, 38%, 20%);
+  --gray-blue:hsl(240, 18%, 77%);
+  background: #f4f4fc;
+  transition: all .5s;
+  }
+.hide{
+  opacity: 0;
+}
+
+.App{
+  background: linear-gradient(1deg, #fff, #f4f4fc);
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    top: 93%;left: 0;
+    width: 100%;height: 154px;
+    background: url(./images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @media (min-width:768px) {
+      background-size: 50%;      
+    }
+  }
+  
+}
+
+
